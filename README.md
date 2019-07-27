@@ -10,10 +10,10 @@
 ## Installation <a name="installation"></a>
 
 1. Dependencies needed. Use `pip install <dependency>` 
-    Machine Learning Libraries: Numpy, Pandas, Sklearn
-    Natural Language Process Libraries: NLTK
-    SQLlite Database Libraries: SQLalchemy
-    Web App and Data Visualization: Flask, Plotly
+    - Machine Learning Libraries: Numpy, Pandas, Sklearn
+    - Natural Language Process Libraries: NLTK
+    - SQLlite Database Libraries: SQLalchemy
+    - Web App and Data Visualization: Flask, Plotly
     
 2. Run the following commands in the project's root directory to set up your database and model.
 
