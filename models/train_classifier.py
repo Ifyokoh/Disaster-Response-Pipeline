@@ -49,7 +49,13 @@ def build_model():
         ('tfidf',TfidfTransformer()),
         ('clf', MultiOutputClassifier(AdaBoostClassifier(n_estimators=100, learning_rate = 0.5)))
 	])
-    return model
+    parameters = {
+        'tfidf__norm':['l2','l1']
+    }
+
+    cv = GridSearchCV(estimator=model, param_grid = parameters)
+   
+    return cv
 
 
 def evaluate_model(model, X_test, y_test, category_names):
